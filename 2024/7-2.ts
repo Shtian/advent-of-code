@@ -65,10 +65,11 @@ const part2 = (input: string) => {
     }
     return 0;
   });
-  console.log(runs); // 96_693_851 > 83_408_124 >  oooof -- 74 test input
+  console.log(runs); // 96_693_851 > 83_408_124 >  oooof --  265 > 235 > test input
   return results.reduce((acc, next) => {
     return acc + next;
   }, 0);
 };
 
-const res = part2(testInput); //?
+const res = part2(input); //?
+console.log(res);

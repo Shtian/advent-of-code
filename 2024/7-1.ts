@@ -55,4 +55,4 @@ const part1 = (input: string) => {
   }, 0);
 };
 
-const res = part1(testInput); //?
+const res = part1(input); //?
