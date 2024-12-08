@@ -1,4 +1,4 @@
-import { input } from "./6-input";
+import { input } from "../6-input";
 const testInput = `....#.....
 .........#
 ..........
@@ -85,4 +85,4 @@ const printMap = (map) => {
   });
 };
 
-part1(input); //?
+part1(testInput); //?

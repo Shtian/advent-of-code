@@ -1,4 +1,4 @@
-import { input } from "./2-input";
+import { input } from "../2-input";
 const testInput = `7 6 4 2 1
 1 2 7 8 9
 9 7 6 2 1
