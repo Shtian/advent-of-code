@@ -8,6 +8,7 @@ const testInput = `89010123
 01329801
 10456732`;
 
+// [x, y, value]
 type Position = [number, number, number];
 type Path = {
   startPos: Position;
