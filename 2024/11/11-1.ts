@@ -13,13 +13,6 @@ const parseStart = (input: string) => {
 
 const blink = (stones: string[], timesToBlink: number) => {
   const t0 = performance.now();
-  console.log(
-    "Times left to blink",
-    timesToBlink,
-    "- parsing",
-    stones.length,
-    "stones next..."
-  );
   if (timesToBlink === 0) return stones;
   timesToBlink--;
 
@@ -43,7 +36,7 @@ const blink = (stones: string[], timesToBlink: number) => {
   return blink(stonesAfterBlink, timesToBlink);
 };
 
-// this shaves of about 1/3rd of the time
+// this shaves of about 1/3rd of the time, but need to do it on recursive function scale :/ rewrite part 2
 const memoizedResults = new Map<string, readonly [string, string]>();
 const split = (currentNumber: string): readonly [string, string] => {
   if (memoizedResults.has(currentNumber)) {
