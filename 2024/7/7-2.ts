@@ -1,4 +1,4 @@
-import { input } from "../7-input";
+import { input } from "./7-input";
 const testInput = `190: 10 19
 3267: 81 40 27
 83: 17 5
