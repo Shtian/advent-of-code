@@ -160,7 +160,6 @@ const printMap = (
   map: Array<Array<MapNode>>,
   path: Array<{ x: number; y: number }> = []
 ) => {
-  console.log("Map:");
   for (let i = 0; i < map.length; i++) {
     let row = "";
     for (let j = 0; j < map[i].length; j++) {
@@ -169,7 +168,7 @@ const printMap = (
       if (node.isWall) {
         row += "🧱 ";
       } else if (node.isStart) {
-        row += "🏃‍♂️ ";
+        row += "🏃 ";
       } else if (node.isEnd) {
         row += "🏁 ";
       } else if (hasPath) {
